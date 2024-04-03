@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "SdYA3qbvYC1j8gghKAQ2M+q0U2sFJVQA58N1wOP3bZQvBfhlAdyWiIV61ZHpKAHfuq4Jl2+d0fsT8ymWioP1sQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Skyth\\Desktop\\School Stuff\\Winter 24\\CSE 210\\cse210\\cse210\\prove\\Develop02\\Develop02.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Skyth\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Skyth\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Skyth\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Skyth\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
