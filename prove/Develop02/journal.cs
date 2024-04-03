@@ -26,7 +26,7 @@ public class Journal
 
     public void Load(string file)
     {
-        while (true) // Loop until a valid file name is provided
+        while (true)
         {
             try
             {
@@ -53,15 +53,13 @@ public class Journal
                         Console.Write(journalEntries);
                     }
                 }
-
-                // Break out of the loop if everything executed successfully
                 break;
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error: " + ex.Message);
                 Console.WriteLine("Not recognized. Please try again.");
-                file = Console.ReadLine(); // Read the file name again
+                file = Console.ReadLine();
             }
         }
     }
