@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "fEIzOeDcTV/md8jnT/S2ZS5ET6CPCBYt5aSZtF48IIw1M0zJBh4yZ+oeW9prwL+jsU+h3YZkH1JePLDbYf5tOA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Skyth\\Desktop\\School Stuff\\Winter 24\\CSE 210\\cse210\\cse210\\final\\Foundation4\\Foundation4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Skyth\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Skyth\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Skyth\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Skyth\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
