@@ -1,0 +1,76 @@
+
+
+
+            Program
+___________________________________
+            Main             
+___________________________________
+
+
+            ChecklistGoal:
+___________________________________            
+            CreateChildGoal
+            IsComplete
+            RecordEvent
+            CalculateAGP
+            ListGoal
+            SaveGoal
+
+___________________________________
+
+
+            EternalGoal:
+___________________________________
+            CreateChildGoal
+            ListGoal
+            IsComplete
+            SaveGoal
+            RecordEvent
+            CalculateAGP
+
+___________________________________
+
+
+
+            Goal:
+___________________________________
+            CreateBaseGoal
+            SaveGoal
+            CreateChildGoal
+            RecordEvent
+            IsComplete
+            ListGoal
+            CalculateAGP
+
+___________________________________
+
+
+
+            GoalsTracker:
+___________________________________
+            SaveGoals
+            LoadGoals
+            ListGoals
+            addGoal
+            CalculateAGP
+            RecordEventInTracker
+
+
+
+___________________________________
+
+
+
+            SimpleGoal:
+___________________________________
+            CreateChildGoal
+            RecordEvent
+            IsComplete
+            ListGoal
+            CalculateAGP
+            SaveGoal
+
+___________________________________
+
+
+
