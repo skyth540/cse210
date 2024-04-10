@@ -1,5 +1,4 @@
 using System;
-
 public class ChecklistGoal : Goal
 {
     private int _bonusPoints;
@@ -25,7 +24,6 @@ public class ChecklistGoal : Goal
         _bonusPoints = Convert.ToInt32(bonusPoints);
         _stepCounter = 0;
     }
-
     public override bool IsComplete() 
     {
         if (_stepCounter >= _steps) 
@@ -37,12 +35,10 @@ public class ChecklistGoal : Goal
             return false;
         }
     }
-    
     public override void RecordEvent()
     {
         _stepCounter ++;
     }
-
     public override int CalculateAGP()
     {
         int points = 0;
@@ -54,7 +50,6 @@ public class ChecklistGoal : Goal
         }
         return points;
     }
-
     public override void ListGoal()
     {
         string statusSymbol = "";
@@ -67,7 +62,6 @@ public class ChecklistGoal : Goal
         }
         Console.Write($"[{statusSymbol}] {_name} ({_description}), Completed {_stepCounter}/{_steps}");
     }
-
     public override string SaveGoal()
     {
         string line = "";

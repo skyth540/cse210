@@ -1,6 +1,5 @@
 using System;
 using System.Diagnostics;
-
 public class Activity
 {
     private string _startingMessage;
@@ -9,13 +8,10 @@ public class Activity
     private string _activityName;
     static int _Counter = 0;
     static int _userSessionLengthInput = 0;
-
-
     public Activity()
     {
         _Counter = _userSessionLengthInput = 0;
     }
-
     public void SetActivityName(string activityName)
     {
         _activityName = activityName;
@@ -24,7 +20,6 @@ public class Activity
     {
         _activityDescription = activityDescription;
     }
-
     public int GetUserSessionLengthInput()
     {
         return _userSessionLengthInput;
@@ -35,7 +30,6 @@ public class Activity
         Console.WriteLine(_startingMessage);
         Console.WriteLine();
     }
-
     public void DisplayDescription()
     {
         Console.WriteLine(_activityDescription);
@@ -50,7 +44,6 @@ public class Activity
         DisplayCounter(5);
         Console.Clear();
     }
-
     public void DisplayCounter(int numSecondsToRun)
     {
         Stopwatch stopwatch = new Stopwatch();
@@ -71,7 +64,6 @@ public class Activity
 
         Console.Write(" ");
     }
-
     public void DisplayCountdown(int numSecondsToRun)
     {
         for (int i = numSecondsToRun; i >= 1; i--)
@@ -81,19 +73,16 @@ public class Activity
             Thread.Sleep(1000);
         }
     }
-
     public void DisplayGetSessionLength()
     {
         Console.Write("How long, in seconds, would you like your session? ");
         _userSessionLengthInput = int.Parse(Console.ReadLine());
     }
-
     public void DisplayGetReady()
     {
         Console.WriteLine("Get ready...");
         DisplayCounter(5);
     }
-
     public void RunActivityStart()
     {
         DisplayStartingtMessage();
@@ -102,7 +91,6 @@ public class Activity
         DisplayGetReady();
         Console.Clear();
     }
-
     public void RunActivityEnd()
     {
         DisplayEndingMessage();

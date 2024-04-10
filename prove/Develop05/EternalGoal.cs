@@ -1,9 +1,7 @@
 using System;
-
 public class EternalGoal : Goal
 {
     private int _stepCounter;
-
     public EternalGoal()
     {
         _name = "";
@@ -22,24 +20,20 @@ public class EternalGoal : Goal
     {
         CreateBaseGoal();
     }
-
     public override void ListGoal()
     {
         Console.Write($"[ ] {_name} ({_description})");
     }
-
     public override bool IsComplete()
     {
         return false;
     }
-
     public override string SaveGoal()
     {
         string line = "";
         line = $"EternalGoal:" + _name + "," + _description + "," + _goalPoints.ToString();
         return line;
     }
-
     public override void RecordEvent()
     {
         _stepCounter ++;

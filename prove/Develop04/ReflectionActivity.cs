@@ -1,6 +1,5 @@
 using System;
 using System.Diagnostics;
-
 public class ReflectingActivity : Activity
 {
     private List<string> _prompt;
@@ -9,9 +8,7 @@ public class ReflectingActivity : Activity
     public ReflectingActivity() : base()
     {
         SetActivityName("Reflection Activity");
-
         SetActivityDescription("This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.");
-
         _prompt = new List<string>
         {
             "Think of a time when you stood up for someone else",
@@ -19,7 +16,6 @@ public class ReflectingActivity : Activity
             "Think of a time when you helped someone in need",
             "Think of a time when you did something truly selfless"
         };
-
         _question = new List<string> 
         {
             "Why was this experience meaningful to you?",
@@ -33,7 +29,6 @@ public class ReflectingActivity : Activity
             "How can you keep this experience in mind in the future?"
         };
     }
-
     public void RunReflectionActivity()
     {
         RunActivityStart();
@@ -41,7 +36,6 @@ public class ReflectingActivity : Activity
         DisplayQuestions();
         RunActivityEnd();
     }
-
     public void DisplayPrompt()
     {
         int randomIndex = new Random().Next(0, _prompt.Count());
@@ -49,11 +43,9 @@ public class ReflectingActivity : Activity
         Console.WriteLine("When you have something in mind, press enter to continue.");
 
     }    
-
     public void DisplayQuestions()
     {
         List<int> indexes = new List<int>();
-
         for (int i = 0; i < 4; i++)
         {
             int randomInt = new Random().Next(0, _question.Count());
@@ -66,7 +58,6 @@ public class ReflectingActivity : Activity
         Console.Clear();
         Console.WriteLine("Ponder on each question.\n");
         DisplayCountdown(5);
-
         foreach (int index in indexes)
         {
             Console.Write(_question[index]);
@@ -75,6 +66,5 @@ public class ReflectingActivity : Activity
         }
         
     }
-
         
 }

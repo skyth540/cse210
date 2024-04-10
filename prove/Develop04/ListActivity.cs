@@ -1,11 +1,9 @@
 using System;
 using System.Diagnostics;
-
 public class ListingActivity : Activity
 {
     private string _randomPrompt { get; set; }
     private List<string> _prompts;
-
     public ListingActivity() : base()
     {
         SetActivityName("Listing Activity");
@@ -20,8 +18,6 @@ public class ListingActivity : Activity
             "Who are some of your personal heroes?"
         };
     }
-
-
     public void RunListingActivity()
     {
         RunActivityStart();
@@ -36,7 +32,6 @@ public class ListingActivity : Activity
         Console.WriteLine(_prompts[randomIndex]);
         Console.WriteLine();
     }
-
     private void ListingCounter()
     {
         DateTime startTime = DateTime.Now;

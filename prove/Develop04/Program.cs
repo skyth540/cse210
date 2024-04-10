@@ -8,7 +8,6 @@ class Program
         int reflectingCount = 0;
         int listingCount = 0;
         Console.WriteLine("Mindfulness Program\n");
-
         bool run = true;
         while (run)
         {
@@ -16,7 +15,6 @@ class Program
             Console.WriteLine("2. Reflecting Activity");
             Console.WriteLine("3. Listing Activity");
             Console.WriteLine("4. Quit\n");
-
             int select = -1;
             while (select != 1 && select != 2 && select != 3 && select != 4)
             {
@@ -30,7 +28,6 @@ class Program
                     Console.WriteLine("Invalid input. Please enter a number.");
                 }
             }
-
             switch (select)
             {   
                 case 1:
