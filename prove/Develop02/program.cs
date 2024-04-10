@@ -1,12 +1,10 @@
 using System;
-
 class Program
 {
     static void Main(string[] args)
     {
         Journal journal = new Journal();
         Console.WriteLine("You have opened your journal.");
-
         bool running = true;
         while (running)
         {
@@ -20,7 +18,6 @@ class Program
             Console.WriteLine("5. Quit");
             int choice = int.Parse(Console.ReadLine());
             Console.WriteLine();
-
             switch (choice)
             {   
                 case 1:

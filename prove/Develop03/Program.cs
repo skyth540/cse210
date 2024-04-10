@@ -20,7 +20,6 @@ class Program
         Console.Write("Not recognized. Please try again to ");
         }
         }
-
         Console.WriteLine("Input the verse text: \n ");
         theReference.SetText();
         Scripture scripture = new(theReference);
@@ -33,11 +32,9 @@ class Program
                 Console.Write("Good job!");
                 break;
             }
-
             scripture.HideWord(4);
             Console.Clear();
             scripture.DisplayText();
-
             Console.Write("Complete the empty spaces and press enter to continue, or type STOP to end\n");
             run = Console.ReadLine().ToLower();
                 if(run == "STOP")

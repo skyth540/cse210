@@ -1,8 +1,6 @@
 using System;
-
 public class Journal
 {
-
     public List<Entry> _entries = new List<Entry>();
     public void Write()
     {
@@ -12,7 +10,6 @@ public class Journal
         userEntry.Response();
         _entries.Add(userEntry);
     }
-
     public void Display()
     {
         foreach (Entry entry in _entries)
@@ -23,7 +20,6 @@ public class Journal
             Console.WriteLine();
         }
     }
-
     public void Load(string file)
     {
         while (true)
@@ -63,7 +59,6 @@ public class Journal
             }
         }
     }
-
     public void Save(string file)
     {
         using StreamWriter finFile = new StreamWriter(file, true);

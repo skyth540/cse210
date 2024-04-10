@@ -4,7 +4,6 @@ public class DisplayReference
     private int _chapter; 
     private int _verseNum;
     private string _verseText;
-
     public DisplayReference (string book, int chap, int vrs_n)
     {
 
@@ -12,17 +11,14 @@ public class DisplayReference
         _chapter = chap;
         _verseNum = vrs_n;
     }
-
     public string FormatRef()
     {
             return $"{_book} {_chapter}:{_verseNum}";
     }
-
     public void SetText()
     {
         _verseText  = Console.ReadLine();
     }
-
     public string GetTheVerse()
     {
         return _verseText;
@@ -31,7 +27,6 @@ public class DisplayReference
     {
         return _book;
     }
-
     public int GetChap()
     {
         return _chapter;

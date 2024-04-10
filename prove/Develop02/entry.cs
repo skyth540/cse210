@@ -1,17 +1,14 @@
 using System;
-
 public class Entry 
 {
     public string _date;
     public string _prompt;
     public string _response;
-
     public void Date()
     {
         DateTime now = DateTime.Now;
         _date = now.ToShortDateString();
     }
-
     public void Prompt()
     {
         List<string> prompts = new List<string>()
@@ -27,8 +24,6 @@ public class Entry
         _prompt = prompts[randI];
         Console.WriteLine(_prompt);
     }
-
-
     public void Response()
     {
         Console.Write(">");
