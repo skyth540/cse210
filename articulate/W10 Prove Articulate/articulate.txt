@@ -1,0 +1,30 @@
+Polymorphism is making new child classes from a parent class. This allows you to dynamically create classes, and modify them by changing the parent. This let's you reuse code even more than previous methods, which is more efficient to work with in every way. It also allows for modularity and hierarchies.
+
+Example:
+
+using System;
+public class ChecklistGoal : Goal
+{
+    private int _bonusPoints;
+    private int _steps;
+    private int _stepCounter;
+    public ChecklistGoal(string name, string description, int goalPoints, int bonusPoints, int steps, int stepCounter)
+    {
+        _name = name;
+        _description = description;
+        _goalPoints = goalPoints;
+        _bonusPoints = bonusPoints;
+        _steps = steps;
+        _stepCounter = stepCounter;
+    }
+    public override void CreateChildGoal()
+    {
+        CreateBaseGoal();
+        Console.Write("Times to do this goal to get a bonus? ");
+        string stringChecklistSteps = Console.ReadLine();
+        _steps = Convert.ToInt32(stringChecklistSteps);
+        Console.Write("Bonus amount: ");
+        string bonusPoints = Console.ReadLine();
+        _bonusPoints = Convert.ToInt32(bonusPoints);
+        _stepCounter = 0;
+    }

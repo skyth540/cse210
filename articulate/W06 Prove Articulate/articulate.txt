@@ -1,0 +1,23 @@
+Encapsulation is putting variables and functions together to make classes. Classes control access to those components, which helps stop accidentally messing something up if it was all together. It is also easier to read and keep track of what everything does when it is better organized. It also helps with controlling code in a business setting where security is important. There are less bugs and oversight with encapsulation 
+
+Here is a snippet showing this:
+
+public class ScriptureWord
+{
+    private string _theWord;
+    private bool _isHidden;
+
+    public ScriptureWord(string text)
+    {
+        _theWord = text;
+        _isHidden = false;
+    }
+
+    public string GetLine()
+    {
+        if(_isHidden == true)
+        {
+            _theWord = "______";
+        }
+        return _theWord;
+    }

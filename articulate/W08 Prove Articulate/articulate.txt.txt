@@ -1,0 +1,8 @@
+Inheritance created new classes to be created based on old ones, which then inherit their properties and functions. This means code reusability and hierarchical organization, which reduces redundancy and increases scalability. It also means polymorphism and lets you manage related classes within a program. 
+
+
+
+Here is a snippet from my program:
+
+public class BreathingActivity : Activity
+{

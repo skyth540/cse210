@@ -1,0 +1,64 @@
+Abstraction refers to the concept of hiding complex implementation details and showing only the necessary features of an object or system. It allows developers to focus on what an object does rather than how it achieves its functionality. A key benefit of abstraction is simplification and organization of code, making it more manageable and easier to maintain. By abstracting away unnecessary details, developers can work with higher-level concepts, enhancing readability and scalability. One common application of abstraction is in object-oriented programming, where classes and interfaces are used to define abstract data types. For example, consider a Shape class with abstract methods like CalculateArea() and Draw(). Subclasses like Circle and Square can then implement these methods according to their specific shapes.
+Encapsulation is putting variables and functions together to make classes. Classes control access to those components, which helps stop accidentally messing something up if it was all together. It is also easier to read and keep track of what everything does when it is better organized. It also helps with controlling code in a business setting where security is important. There are less bugs and oversight with encapsulation 
+
+Here is a snippet showing this:
+
+public class ScriptureWord
+{
+    private string _theWord;
+    private bool _isHidden;
+
+    public ScriptureWord(string text)
+    {
+        _theWord = text;
+        _isHidden = false;
+    }
+
+    public string GetLine()
+    {
+        if(_isHidden == true)
+        {
+            _theWord = "______";
+        }
+        return _theWord;
+    }
+
+
+Inheritance created new classes to be created based on old ones, which then inherit their properties and functions. This means code reusability and hierarchical organization, which reduces redundancy and increases scalability. It also means polymorphism and lets you manage related classes within a program. 
+
+Here is a snippet from my program:
+
+public class BreathingActivity : Activity
+{
+}
+Polymorphism is making new child classes from a parent class. This allows you to dynamically create classes, and modify them by changing the parent. This let's you reuse code even more than previous methods, which is more efficient to work with in every way. It also allows for modularity and hierarchies.
+
+Example:
+
+using System;
+public class ChecklistGoal : Goal
+{
+    private int _bonusPoints;
+    private int _steps;
+    private int _stepCounter;
+    public ChecklistGoal(string name, string description, int goalPoints, int bonusPoints, int steps, int stepCounter)
+    {
+        _name = name;
+        _description = description;
+        _goalPoints = goalPoints;
+        _bonusPoints = bonusPoints;
+        _steps = steps;
+        _stepCounter = stepCounter;
+    }
+    public override void CreateChildGoal()
+    {
+        CreateBaseGoal();
+        Console.Write("Times to do this goal to get a bonus? ");
+        string stringChecklistSteps = Console.ReadLine();
+        _steps = Convert.ToInt32(stringChecklistSteps);
+        Console.Write("Bonus amount: ");
+        string bonusPoints = Console.ReadLine();
+        _bonusPoints = Convert.ToInt32(bonusPoints);
+        _stepCounter = 0;
+    }
+}
