@@ -1,0 +1,10 @@
+I will be doing foundations 4
+
+
+using abstraction, process youtube comments and video details. 
+
+using encapsulation, track online orders and check using logic to determine when to do certain functions. 
+
+using inheritance , be able to help handle different kinds of event details, and put them into different formats 
+
+using polymorphism , turn a base program into different kinds of programs for exercising.
