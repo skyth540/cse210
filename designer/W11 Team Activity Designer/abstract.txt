@@ -6,6 +6,7 @@ ___________________________________
             Main             
 ___________________________________
 
+Program will run the user experience, input, and organize the appropriate functions from classes.
 
             ChecklistGoal:
 ___________________________________            

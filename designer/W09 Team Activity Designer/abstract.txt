@@ -6,6 +6,8 @@ ___________________________________
             Main             
 ___________________________________
 
+Program will run the user experience, input, and organize the appropriate functions from classes.
+
 
             ChecklistGoal:
 ___________________________________            
@@ -19,6 +21,8 @@ ___________________________________
 ___________________________________
 
 
+Takes info for goal and handles it
+
             EternalGoal:
 ___________________________________
             CreateChildGoal
@@ -30,6 +34,7 @@ ___________________________________
 
 ___________________________________
 
+Takes info for goal and handles it
 
 
             Goal:
@@ -44,6 +49,7 @@ ___________________________________
 
 ___________________________________
 
+Functions for the other goals to work
 
 
             GoalsTracker:
@@ -55,7 +61,7 @@ ___________________________________
             CalculateAGP
             RecordEventInTracker
 
-
+Makes the program work with files
 
 ___________________________________
 

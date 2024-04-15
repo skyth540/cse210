@@ -6,6 +6,11 @@ ___________________________________
             Main             
 ___________________________________
 
+Program will run the user experience, input, and organize the appropriate functions from classes.
+
+
+
+
 
             Reference:
 ___________________________________            
@@ -17,6 +22,7 @@ ___________________________________
             GetVerseNum
 ___________________________________
 
+Reference parses the scripture reference and handles setting it.
 
             Scripture:
 ___________________________________
@@ -25,6 +31,8 @@ ___________________________________
             DisplayText
 ___________________________________
 
+
+Scripture deals with the scripture verse text. It also handles creating blanks with Words.
 
 
             Words:
@@ -35,3 +43,4 @@ ___________________________________
             IsHidden
 ___________________________________
 
+Words helps Scripture, it makes the blanks.

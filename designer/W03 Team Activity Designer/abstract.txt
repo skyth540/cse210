@@ -7,12 +7,21 @@ ___________________________________
 ___________________________________
 
 
+Program will run the user experience, input, and organize the appropriate functions from classes.
+
+
+
+
             Entry:
 ___________________________________            
             Date
             Prompt
             Repsonses
 ___________________________________
+
+Entry will handle the inputs and stores the prompts.
+
+
 
 
             Journal:
@@ -22,3 +31,5 @@ ___________________________________
             Load
             Save
 ___________________________________
+
+Journal is mostly back end for storing the data to recall back. It writes and reads files.

@@ -6,6 +6,10 @@ ___________________________________
             Main             
 ___________________________________
 
+Program will run the user experience, input, and organize the appropriate functions from classes.
+
+
+
 
             Activity:
 ___________________________________            
@@ -23,7 +27,7 @@ ___________________________________
             RunActivityEnd
 ___________________________________
 
-
+The base activity. Contains the start and end messages. Does waiting and runs the steps of an activity.
             BreathingActivity:
 ___________________________________
             RunBreathingActivity
@@ -31,7 +35,7 @@ ___________________________________
             Countdown
             CountUp
 ___________________________________
-
+builds on Activity to do the breathing activity
 
 
             ListActivity:
@@ -41,7 +45,7 @@ ___________________________________
             ListingCounter
 ___________________________________
 
-
+builds on Activity to do the listing activity
 
             ReflectionActivity:
 ___________________________________
@@ -50,3 +54,6 @@ ___________________________________
             DisplayQuestions
 
 ___________________________________
+
+
+builds on Activity to do the reflection activity
